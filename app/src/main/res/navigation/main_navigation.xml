@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/onboardingFirstFragment">
+    <fragment
+        android:id="@+id/onboardingFirstFragment"
+        android:name="com.rusabi.playzone.OnboardingFirstFragment"
+        android:label="fragment_onboarding_first"
+        tools:layout="@layout/fragment_onboarding_first" >
+        <action
+            android:id="@+id/action_onboardingFirstFragment_to_onboardingSecondFragment2"
+            app:destination="@id/onboardingSecondFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingSecondFragment2"
+        android:name="com.rusabi.playzone.OnboardingSecondFragment"
+        android:label="fragment_onboarding_second"
+        tools:layout="@layout/fragment_onboarding_second" >
+        <action
+            android:id="@+id/action_onboardingSecondFragment2_to_onboardingThirdFragment"
+            app:destination="@id/onboardingThirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingThirdFragment"
+        android:name="com.rusabi.playzone.OnboardingThirdFragment"
+        android:label="fragment_onboarding_third"
+        tools:layout="@layout/fragment_onboarding_third" />
+</navigation>
